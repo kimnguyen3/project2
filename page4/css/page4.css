@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #F4F4F9;
+    color: #334048;
+    font-size: 30px;
+}
+
+#center {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    width: 50%;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: #334048;
+}
+
+p {
+    text-align: center;
+    line-height: 1000%;
+}
