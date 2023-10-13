@@ -28,9 +28,7 @@ a {
     transform: translate(6%);
     animation-name: fire;
     animation-delay: 1s;
-    animation-direction: forwards;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
 }
@@ -41,7 +39,7 @@ a {
         color: yellow;
     }
     to {
-        transform: translate(500%) scale(150%);
+        transform: translate(300%) scale(150%);
         color: orangered;
     }
 }
