@@ -24,13 +24,17 @@ a {
     color: black;
 }
 
+a:hover {
+    color: #474e52;
+}
+
 p {
     text-transform: uppercase;
     font-size: 500%;
 
     animation-name: big;
     animation-delay: none;
-    animation-duration: 1.5s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }
@@ -40,7 +44,7 @@ p {
         transform: scale(100%);
     }
     50% {
-        transform: scale(300%) skew(25deg, -10deg);
+        transform: scale(300%);
     }
     100% {
         transform: scale(100%);

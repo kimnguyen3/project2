@@ -28,7 +28,9 @@ a {
     transform: translate(6%);
     animation-name: fire;
     animation-delay: 1s;
+    animation-direction: forwards;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
 }
