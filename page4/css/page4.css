@@ -3,9 +3,30 @@
 }
 
 body {
-    background-color: #F4F4F9;
-    color: #334048;
+    background-color: #334048;
+    
+    color: #FAFCD9;
     font-size: 30px;
+
+    animation-name: fade;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        background-image: radial-gradient(circle closest-side, #F4F4F9, #FAFCD9 25%, #334048 75%);
+    }
+    50% {
+        background-image: radial-gradient(circle closest-side, #F4F4F9, #FAFCD9 15%, #334048 65%);
+    }
+    100% {
+        background-image: radial-gradient(circle closest-side, #F4F4F9, #FAFCD9 25%, #334048 75%);
+    }
 }
 
 #center {
@@ -17,7 +38,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #334048;
+    color: #FAFCD9;
 }
 
 p {
@@ -32,6 +53,12 @@ p {
 }
 
 .p2 {
+    padding-top: 29%;
+    padding-bottom: 10%;
+    color: #334048;
+}
+
+.p3 {
     padding-top: 29%;
     padding-bottom: 29%;
 }
