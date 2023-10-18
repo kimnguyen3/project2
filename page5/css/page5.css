@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #FAFCD9;
+    color: #334048;
+    font-size: 30px;
+
+    animation-name: fade;
+    animation-delay: none;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+    from {
+        background-color: #334048;
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+#center {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: flex-end; */
+    width: 60%;
+    margin: auto;
+    position: fixed;
+    top: 17%;
+    left: 23.5%;
+
+    line-height: 200%;
+}
+
+#side2 {
+    position: relative;
+    transform: rotate(90deg);
+    top: 186px;
+    left: 546px;
+}
+
+#side3 {
+    position: relative;
+    top: 349px;
+}
+
+#side4 {
+    position: relative;
+    transform: rotate(-90deg);
+    top: 68.5px;
+    left: -246px;
+}
+
+#wind {
+    transform: translate(-185%);
+    color: #628ba4;
+
+    animation-name: wind;
+    animation-delay: 4s;
+    animation-direction: forwards;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes wind {
+    0% {
+        transform: translate(-185%);
+    }
+    25% {
+        transform: translate(-50%, 200%);
+    }
+    50% {
+        transform: translate(45%);
+    }
+    75% {
+        transform: translate(140%, -240%);
+    }
+    100% {
+        transform: translate(375%);
+    }
+}
+
+#appear {
+    color: #628ba4;
+    transform: translate(-59%);
+    opacity: 0;
+
+    animation-name: appear;
+    animation-direction: forwards;
+    animation-delay: 9s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #628ba4;
+}
+
+a:hover {
+    opacity: 0.5;
+}

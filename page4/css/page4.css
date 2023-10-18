@@ -10,7 +10,7 @@ body {
     font-size: 30px;
 
     animation-name: fade;
-    animation-delay: 5s;
+    animation-delay: 6s;
     animation-direction: normal;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -23,16 +23,16 @@ body {
         background-image: radial-gradient(#334048, #334048);
     }
     25% {
-        background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
     50% {
         background-image: radial-gradient(#334048, #334048);
     }
     75% {
-        background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
     100% {
-        background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
 }
 
@@ -42,6 +42,16 @@ body {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+    color: #FAFCD9;
+    position: relative;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
 p {
     text-align: center;
     
@@ -49,38 +59,37 @@ p {
 
 #p {
     padding-top: 29%;
-    padding-bottom: 50%;
+    padding-bottom: 70%;
 }
-
-/* #change:hover {
-    transform: skew(130deg);
-    color: red;
-} */
 
 #change {
     animation-name: headed;
-    animation-delay: 3s;
+    animation-delay: 1s;
     animation-direction: forwards;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in;
 }
 
 @keyframes headed {
-    from {
-        transform: translate(0%, 0%) skew(0deg);
-        color: black;
+    0% {
+        top: 0px;
+        left: 0px;
     }
-    to {
-        transform: translate(5%, 100%) skew(130deg);
-        color: red;
+    50%{
+        top: 10px;
+        left: 10px;
+    }
+    100% {
+        top: 300px;
+        left: -300px;
     }
 }
 
 #p2 {
     padding-top: 29%;
-    padding-bottom: 50%;
+    padding-bottom: 70%;
     color: #334048;
 }
 
@@ -93,9 +102,23 @@ p {
     padding-bottom: 29%;
 }
 
-a {
-    text-decoration: none;
-    color: #FAFCD9;
-    position: relative;
+#lag {
+    opacity: 0;
+
+    animation-name: lag;
+    animation-delay: 10s;
+    animation-direction: forwards;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 
+@keyframes lag {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
