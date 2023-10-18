@@ -14,3 +14,5 @@ This was coded on Visual Studio Code using HTML and CSS. The site is being hoste
 
 For centering the content in the center of the page , I used code from https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/
 hyperlink to another part of the page: https://stackoverflow.com/questions/15481911/linking-to-a-specific-part-of-a-web-page 
+smooth scroll: https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+gradient targeting: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Using_CSS_gradients

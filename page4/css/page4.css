@@ -11,18 +11,27 @@ body {
 
     animation-name: fade;
     animation-delay: 5s;
-    animation-duration: 2s;
     animation-direction: normal;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes fade {
-    from {
-        background-color: #334048;
+    0% {
+        background-image: radial-gradient(#334048, #334048);
     }
-    to {
+    25% {
+        background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+    }
+    50% {
+        background-image: radial-gradient(#334048, #334048);
+    }
+    75% {
+        background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+    }
+    100% {
         background-image: radial-gradient(ellipse 150% 50%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
 }
@@ -35,6 +44,7 @@ body {
 
 p {
     text-align: center;
+    
 }
 
 #p {
@@ -42,22 +52,29 @@ p {
     padding-bottom: 50%;
 }
 
-p #drop {
+/* #change:hover {
+    transform: skew(130deg);
+    color: red;
+} */
+
+#change {
     animation-name: headed;
     animation-delay: 3s;
     animation-direction: forwards;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease;
 }
 
 @keyframes headed {
     from {
-        transform: translate(0%);
+        transform: translate(0%, 0%) skew(0deg);
+        color: black;
     }
     to {
-        transform: translate(50%);
+        transform: translate(5%, 100%) skew(130deg);
+        color: red;
     }
 }
 
@@ -67,7 +84,7 @@ p #drop {
     color: #334048;
 }
 
-#middle, a {
+#middle {
     color: #334048;
 }
 
@@ -79,5 +96,6 @@ p #drop {
 a {
     text-decoration: none;
     color: #FAFCD9;
+    position: relative;
 }
 
