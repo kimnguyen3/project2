@@ -10,7 +10,7 @@ body {
     animation-name: fade;
     animation-delay: none;
     animation-direction: normal;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -63,7 +63,7 @@ body {
     color: #628ba4;
 
     animation-name: wind;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-direction: forwards;
     animation-duration: 6s;
     animation-fill-mode: forwards;
@@ -96,7 +96,7 @@ body {
 
     animation-name: appear;
     animation-direction: forwards;
-    animation-delay: 9s;
+    animation-delay: 7.5s;
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

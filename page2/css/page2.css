@@ -41,17 +41,18 @@ body {
 }
 
 em {
+    position: relative;
+    left: 10px;
+    color: #B2C7D2;
+    
     animation-name: drop1;
     animation-delay: 3.7s;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
-    position: relative;
-    left: 10px;
 }
 
-a {
+#ocean2 {
     text-decoration: none;
     color: #B2C7D2;
     position: relative;
@@ -86,5 +87,33 @@ a {
     }
     100% {
         top: 0px;
+    }
+}
+
+#up {
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    text-decoration: none;
+    color: #B2C7D2;
+
+    animation-name: up;
+    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+#up:hover {
+    opacity: 0.5;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0%) scale(0%);
+    }
+    to{
+        transform: translateY(-750%) scale(150%);
     }
 }

@@ -23,16 +23,16 @@ body {
         background-image: radial-gradient(#334048, #334048);
     }
     25% {
-        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 65% 20%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
     50% {
         background-image: radial-gradient(#334048, #334048);
     }
     75% {
-        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 65% 20%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
     100% {
-        background-image: radial-gradient(ellipse 80% 25%, #F4F4F9, #FAFCD9 15%, #334048 45%);
+        background-image: radial-gradient(ellipse 65% 20%, #F4F4F9, #FAFCD9 15%, #334048 45%);
     }
 }
 
