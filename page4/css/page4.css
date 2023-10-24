@@ -84,6 +84,7 @@ p {
     100% {
         top: 300px;
         left: -300px;
+        color: #fdf474;
     }
 }
 
@@ -120,5 +121,6 @@ p {
     }
     to {
         opacity: 1;
+        color: #fdf474;
     }
 }

@@ -39,6 +39,10 @@ body {
     line-height: 200%;
 }
 
+b {
+    opacity: 0;
+}
+
 #side2 {
     position: relative;
     transform: rotate(90deg);
@@ -114,7 +118,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #628ba4;
+    color: #98d8ff;
 }
 
 a:hover {
