@@ -6,6 +6,10 @@ body {
     background-color: #FAFCD9;
     color: #334048;
     font-size: 30px;
+
+    background-image: radial-gradient(#628ba4, #FAFCD9 90%);
+    background-position: center;
+    height: 830px;
 }
 
 #center {

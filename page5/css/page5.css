@@ -7,6 +7,10 @@ body {
     color: #334048;
     font-size: 30px;
 
+    background-image: radial-gradient(#628ba4, #FAFCD9);
+    background-position: center;
+    height: 830px;
+
     animation-name: fade;
     animation-delay: none;
     animation-direction: normal;
@@ -94,7 +98,7 @@ b {
 }
 
 #appear {
-    color: #628ba4;
+    color: #98d8ff;
     transform: translate(-59%);
     opacity: 0;
 

@@ -1,11 +1,16 @@
 * {
     margin: 0;
+    
 }
 
-/* body {
+body {
     background-color: #628ba4;
-    color: white;
-    font-size: 30px;
+    color: #FAFCD9;
+    font-size: 25px;
+
+    background-image: radial-gradient(#628ba4, #FAFCD9 60%);
+    background-position: center;
+    height: 830px;
 
     animation-name: fade;
     animation-delay: none;
@@ -24,12 +29,6 @@
     to {
         opacity: 100%;
     }
-} */
-
-body {
-    background-image: radial-gradient(#628ba4, #FAFCD9);
-    /* color: white; */
-    font-size: 30px;
 }
 
 #center {
@@ -46,5 +45,51 @@ body {
 
 em {
     position: relative;
-    top: 160px;
+    top: -230px;
+    opacity: 0;
+
+    font-family: 'Abril Fatface', serif;
+
+    animation-name: fade;
+    animation-delay: 3s;
+    animation-direction: normal;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #628ba4;
+    font-size: 30px;
+
+    animation-name: glow;
+    animation-delay: 3s;
+    animation-direction: normal;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        color: #628ba4;
+    }
+    50% {
+        color: #7aaac8;
+    }
+    100% {
+        color: #628ba4;
+    }
 }
